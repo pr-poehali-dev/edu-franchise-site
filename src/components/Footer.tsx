@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img 
-                src="https://cdn.poehali.dev/files/1ee7430c-af3b-41ea-816f-24eca2cae60f.png" 
+                src="https://cdn.poehali.dev/files/cd3d646b-c40b-4b51-aae1-c9700e9bd5d0.png" 
                 alt="Система Буракова" 
                 className="h-12"
               />

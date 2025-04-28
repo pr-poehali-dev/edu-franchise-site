@@ -27,28 +27,28 @@ const Index = () => {
       
       <main className="flex-grow">
         {/* Экран 1: Главный экран */}
-        <section className="relative py-20 md:py-32 bg-primary overflow-hidden">
+        <section className="relative py-20 md:py-32 bg-white overflow-hidden">
           <div className="absolute inset-0 w-full h-full">
-            <div className="absolute right-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-l from-primary-foreground/10 to-transparent"></div>
-            <div className="absolute left-20 top-20 w-20 h-20 rounded-full bg-secondary/20 animate-float"></div>
-            <div className="absolute right-40 top-40 w-12 h-12 rounded-full bg-accent/20 animate-float" style={{animationDelay: '1s'}}></div>
-            <div className="absolute left-1/3 bottom-1/4 w-16 h-16 rounded-full bg-primary-foreground/10 animate-float" style={{animationDelay: '2s'}}></div>
+            <div className="absolute right-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-l from-primary/5 to-transparent"></div>
+            <div className="absolute left-20 top-20 w-20 h-20 rounded-full bg-secondary/10 animate-float"></div>
+            <div className="absolute right-40 top-40 w-12 h-12 rounded-full bg-accent/10 animate-float" style={{animationDelay: '1s'}}></div>
+            <div className="absolute left-1/3 bottom-1/4 w-16 h-16 rounded-full bg-primary/10 animate-float" style={{animationDelay: '2s'}}></div>
           </div>
           
           <div className="container mx-auto px-4 relative">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                <h1 className="text-4xl md:text-6xl font-bold text-primary leading-tight mb-6">
                   Откройте свой детский центр по франшизе и зарабатывайте <span className="text-secondary">от 300 000 ₽</span> в месяц
                 </h1>
-                <p className="text-xl text-white/90 mb-8">
+                <p className="text-xl text-gray-700 mb-8">
                   Проверенная бизнес-модель с поддержкой на каждом этапе и минимальными рисками
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-white text-primary hover:bg-secondary hover:text-black text-lg rounded-full px-8">
+                  <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg rounded-full px-8">
                     Получить франшизу
                   </Button>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg rounded-full px-8">
+                  <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-lg rounded-full px-8">
                     Скачать презентацию
                   </Button>
                 </div>
