@@ -17,10 +17,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="bg-white rounded-full p-1 w-12 h-12 flex items-center justify-center">
-                <span className="text-3xl font-extrabold text-primary">K</span>
-              </div>
-              <span className="text-xl font-bold">КидсЭдукейшн</span>
+              <img 
+                src="https://cdn.poehali.dev/files/1ee7430c-af3b-41ea-816f-24eca2cae60f.png" 
+                alt="Система Буракова" 
+                className="h-12"
+              />
             </Link>
             <p className="text-white/80 mb-4">
               Франшиза сети детских образовательных центров для детей от 1 до 7 лет
@@ -78,7 +79,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={20} className="shrink-0 mt-1" />
-                <span>franchise@kidseducation.ru</span>
+                <span>franchise@sistemburakova.ru</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="shrink-0 mt-1" />
@@ -100,7 +101,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-          <p>© {new Date().getFullYear()} КидсЭдукейшн. Все права защищены.</p>
+          <p>© {new Date().getFullYear()} Система Буракова. Все права защищены.</p>
         </div>
       </div>
     </footer>

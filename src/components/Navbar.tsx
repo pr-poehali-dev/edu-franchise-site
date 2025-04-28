@@ -14,10 +14,13 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full bg-primary text-white">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="bg-white rounded-full p-1 w-12 h-12 flex items-center justify-center">
-            <span className="text-3xl font-extrabold text-primary">K</span>
+          <div className="flex items-center gap-2">
+            <img 
+              src="https://cdn.poehali.dev/files/1ee7430c-af3b-41ea-816f-24eca2cae60f.png" 
+              alt="Система Буракова" 
+              className="h-12"
+            />
           </div>
-          <span className="text-xl font-bold">КидсЭдукейшн</span>
         </Link>
 
         {/* Desktop navigation */}
