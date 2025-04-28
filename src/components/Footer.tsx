@@ -1,55 +1,68 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { 
+  Mail, 
+  Phone, 
+  MapPin, 
+  Instagram, 
+  Facebook, 
+  Youtube, 
+  ArrowRight 
+} from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-primary text-white py-10">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">КидсЭдукейшн</h3>
-            <p className="mb-4">
-              Франшиза образовательной организации для детей дошкольного возраста.
-              Мы помогаем детям расти и развиваться в увлекательной игровой форме.
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <div className="bg-white rounded-full p-1 w-12 h-12 flex items-center justify-center">
+                <span className="text-3xl font-extrabold text-primary">K</span>
+              </div>
+              <span className="text-xl font-bold">КидсЭдукейшн</span>
+            </Link>
+            <p className="text-white/80 mb-4">
+              Франшиза сети детских образовательных центров для детей от 1 до 7 лет
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-secondary transition-colors">
-                <Facebook size={24} />
-              </a>
-              <a href="#" className="hover:text-secondary transition-colors">
+            <div className="flex gap-3">
+              <a href="#" className="text-white hover:text-secondary transition-colors">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="hover:text-secondary transition-colors">
-                <Twitter size={24} />
+              <a href="#" className="text-white hover:text-secondary transition-colors">
+                <Facebook size={24} />
+              </a>
+              <a href="#" className="text-white hover:text-secondary transition-colors">
+                <Youtube size={24} />
               </a>
             </div>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Карта сайта</h3>
+            <h3 className="text-lg font-bold mb-4">Навигация</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-secondary transition-colors">
-                  Главная
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="hover:text-secondary transition-colors">
+                <Link to="/#about" className="text-white/80 hover:text-white transition-colors">
                   О нас
                 </Link>
               </li>
               <li>
-                <Link to="/franchise" className="hover:text-secondary transition-colors">
-                  Франшиза
+                <Link to="/#results" className="text-white/80 hover:text-white transition-colors">
+                  Результаты
                 </Link>
               </li>
               <li>
-                <Link to="/programs" className="hover:text-secondary transition-colors">
-                  Программы
+                <Link to="/#reviews" className="text-white/80 hover:text-white transition-colors">
+                  Отзывы
                 </Link>
               </li>
               <li>
-                <Link to="/contacts" className="hover:text-secondary transition-colors">
+                <Link to="/#cost" className="text-white/80 hover:text-white transition-colors">
+                  Стоимость
+                </Link>
+              </li>
+              <li>
+                <Link to="/#contacts" className="text-white/80 hover:text-white transition-colors">
                   Контакты
                 </Link>
               </li>
@@ -57,26 +70,37 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Контакты</h3>
-            <address className="not-italic space-y-2">
-              <p>г. Москва, ул. Образовательная, 123</p>
-              <p>Телефон: <a href="tel:+74951234567" className="hover:text-secondary transition-colors">+7 (495) 123-45-67</a></p>
-              <p>Email: <a href="mailto:info@kidsed.ru" className="hover:text-secondary transition-colors">info@kidsed.ru</a></p>
-            </address>
+            <h3 className="text-lg font-bold mb-4">Контакты</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <Phone size={20} className="shrink-0 mt-1" />
+                <span>+7 (800) 555-35-35</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail size={20} className="shrink-0 mt-1" />
+                <span>franchise@kidseducation.ru</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={20} className="shrink-0 mt-1" />
+                <span>г. Москва, ул. Образовательная, д. 123, офис 456</span>
+              </li>
+            </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Время работы</h3>
-            <ul className="space-y-2">
-              <li>Понедельник - Пятница: 8:00 - 19:00</li>
-              <li>Суббота: 9:00 - 16:00</li>
-              <li>Воскресенье: Выходной</li>
-            </ul>
+            <h3 className="text-lg font-bold mb-4">Хотите узнать больше?</h3>
+            <p className="text-white/80 mb-4">
+              Оставьте заявку и получите подробную презентацию о нашей франшизе
+            </p>
+            <Button className="w-full bg-white text-primary hover:bg-secondary hover:text-black rounded-full flex items-center justify-center gap-2">
+              Получить презентацию
+              <ArrowRight size={16} />
+            </Button>
           </div>
         </div>
         
-        <div className="mt-12 border-t border-white/20 pt-6 text-center">
-          <p>&copy; {new Date().getFullYear()} КидсЭдукейшн. Все права защищены.</p>
+        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+          <p>© {new Date().getFullYear()} КидсЭдукейшн. Все права защищены.</p>
         </div>
       </div>
     </footer>
