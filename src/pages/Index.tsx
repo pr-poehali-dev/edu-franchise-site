@@ -14,7 +14,10 @@ import {
   Building, 
   Settings, 
   TrendingUp,
-  Star
+  Star,
+  Phone,
+  Mail,
+  MapPin
 } from "lucide-react";
 
 const Index = () => {
